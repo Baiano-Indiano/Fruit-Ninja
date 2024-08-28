@@ -24,7 +24,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(1200, 1200);
   
   //criando espada
    knife=createSprite(40,200,20,20);
@@ -100,7 +100,7 @@ function Monster(){
   if(World.frameCount%200===0){
     monster=createSprite(400,200,20,20);
     monster.addAnimation("moving", monsterImage);
-    monster.y=Math.round(random(100,550));
+    monster.y=Math.round(random(600,1200));
     monster.velocityX=-(8+(score/10));
     monster.setLifetime=50;
     
